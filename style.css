@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px #0002;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.input-box {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 14px;
+
+    border: none;
+    background: #2563eb;
+    color: white;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #f1f5f9;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete {
+    background: #dc2626;
+}
+
+.edit {
+    background: #16a34a;
+}
+
+.clear {
+    width: 100%;
+    margin-top: 15px;
+    background: #dc2626;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 92%;
+        padding: 18px;
+    }
+}
+
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 10px 5px;
+    font-size: 12px;
+}
+
+.filter-buttons button:hover {
+    background: #1d4ed8;
+}
